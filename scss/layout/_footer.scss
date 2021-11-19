@@ -1,0 +1,134 @@
+.footer {
+  background-color: var(--bg-dark);
+  padding: 60px 0;
+}
+
+.footer__container {
+  display: flex;
+  align-items: baseline;
+}
+
+// .footer__contacts {
+//   flex-grow: 1;
+// }
+
+.footer__links {
+  margin-left: 70px;
+}
+
+.footer__logo {
+  display: inline-block;
+  margin: 0 0 20px 0;
+}
+
+.address__item {
+  font-size: 14px;
+
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  text-align: left;
+
+  &:not(:last-child) {
+    margin-bottom: 9px;
+  }
+}
+
+.address__link {
+  color: #ffffff99;
+  font-style: normal;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  display: inline-block;
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+
+.address__physical {
+  color: var(--text-light);
+  font-style: normal;
+}
+
+.footer__subtitle {
+  color: var(--text-light);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-bottom: 22px;
+}
+
+.footer .socials__item {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+  }
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer .social__icon {
+  fill: var(--text-light);
+}
+
+.subscribe {
+  margin-left: 93px;
+}
+
+.subscribe__form {
+  display: flex;
+}
+
+.subscribe__title {
+  font-size: 14px;
+
+  font-weight: 700;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-align: left;
+  text-transform: uppercase;
+  color: var(--text-light);
+  margin-bottom: 20px;
+}
+
+.subscribe__input {
+  background-color: var(--bg-dark);
+  border: solid;
+  border-color: rgba(255, 255, 255, 0.3);
+  border-width: 1px;
+  border-radius: 4px;
+  width: 358px;
+  padding: 15px 16px;
+
+  font-size: 16px;
+
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+  text-align: left;
+  color: #ffffff99;
+}
+
+.subscribe__button {
+  padding: 10px 28px 10px 29px;
+  cursor: pointer;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 12px;
+  color: var(--text-light);
+  background-color: var(--accent-color);
+  border-style: none;
+}
+
+.subscribe__icon {
+  width: 24px;
+  height: 24px;
+  margin-left: 10px;
+  fill: var(--text-light);
+}
