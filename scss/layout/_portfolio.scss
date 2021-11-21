@@ -1,13 +1,30 @@
 /*-buttons-section-*/
 .portfolio-buttons {
   display: flex;
-  justify-content: center;
-  margin-bottom: 50px;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  margin-top: -15px;
+  margin-bottom: 40px;
+
+  @media screen and (min-width: 768px) {
+    justify-content: center;
+    flex-wrap: nowrap;
+    margin-top: 0;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
+  }
 }
 
 .portfolio-buttons__item {
+  margin-top: 15px;
   &:not(:last-child) {
     margin-right: 8px;
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-top: 0;
   }
 }
 
@@ -38,10 +55,39 @@
 
 /*-images-section-*/
 .portfolio {
-  display: flex;
-  flex-wrap: wrap;
-  margin-top: -30px;
-  margin-right: -30px;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: -30px;
+    margin-right: -30px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: -30px;
+    margin-right: -30px;
+  }
+}
+
+.portfolio__item {
+  &:not(:last-child) {
+    @media screen and (max-width: 767px) {
+      margin-bottom: 30px;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-top: 30px;
+    margin-right: 30px;
+    flex-basis: calc((100% - 60px) / 2);
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-top: 30px;
+    margin-right: 30px;
+    flex-basis: calc((100% - 90px) / 3);
+  }
 }
 
 .portfolio__title {
@@ -57,12 +103,6 @@
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.03em;
-}
-
-.portfolio__item {
-  margin-top: 30px;
-  margin-right: 30px;
-  flex-basis: calc((100% - 90px) / 3);
 }
 
 .portfolio__link {
@@ -84,6 +124,12 @@
   border-right: #eeeeee;
   border-width: 0 1px 1px 1px;
   border-style: solid;
+}
+
+.portfolio__name--ad-space {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    height: 146px;
+  }
 }
 
 .portfolio__thumb {
