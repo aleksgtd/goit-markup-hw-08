@@ -1187,6 +1187,12 @@ a {
   align-items: center;
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .footer__container {
+    align-items: baseline;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .footer__container {
     display: flex;
@@ -1290,6 +1296,12 @@ a {
 @media screen and (min-width: 768px) {
   .footer__links {
     margin-top: 0;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .footer__links {
+    align-items: baseline;
   }
 }
 
